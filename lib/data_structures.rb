@@ -58,7 +58,8 @@ end
 # Write a method that returns the range of a string of comma-separated integers,
 # e.g., str_range("4,1,8") #=> 7
 def str_range(str)
-  range(str.split(',').map{ |num_str| num_str.to_i})
+  str_to_i = Proc.new {|x| x.to_i}
+  range(str.split(',').map(str_to_i))
 end
 
 
