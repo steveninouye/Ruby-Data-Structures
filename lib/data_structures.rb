@@ -1,5 +1,4 @@
 # EASY
-
 # Write a method that returns the range of its argument (an array of integers).
 def range(arr)
   arr.max - arr.min
@@ -15,7 +14,6 @@ end
 
 
 # MEDIUM
-
 # Write a method that returns the number of vowels in its argument
 def num_vowels(str)
   str.downcase.count("aeiou")
@@ -28,7 +26,6 @@ end
 
 
 # HARD
-
 # Write a method that returns the returns an array of the digits of a
 # non-negative integer in descending order and as strings, e.g.,
 # descending_digits(4291) #=> ["9", "4", "2", "1"]
